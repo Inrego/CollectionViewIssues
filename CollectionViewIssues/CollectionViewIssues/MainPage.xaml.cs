@@ -16,13 +16,7 @@ namespace CollectionViewIssues
         public MainPage()
         {
             InitializeComponent();
-            var data = new int[50];
-            for (var i = 0; i < data.Length; i++)
-            {
-                data[i] = i;
-            }
-
-            CollectionView.ItemsSource = data;
+            BindingContext = new MainPageViewModel();
         }
     }
 }
